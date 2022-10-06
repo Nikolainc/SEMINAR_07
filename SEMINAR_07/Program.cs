@@ -21,17 +21,46 @@
         #endregion
 
         #region Задача 2
+        //Задача 49: Задайте двумерный массив.Найдите элементы, у которых оба индекса чётные, и замените эти элементы на их квадраты.
 
-
-
+        //int[,] array = GetArray(5, 5);
+        //FillArray(array, true, 1, 5);
+        //PrintArray(array);
+        //Console.WriteLine();
+        //for (int i = 0; i < array.GetLength(0); i++)
+        //{
+        //    for (int j = 0; j < array.GetLength(1); j++)
+        //    {
+        //        if (i % 2 == 0 && j % 2 == 0)
+        //        {
+        //            array[i, j] = (int)Math.Pow(array[i, j], 2);
+        //        }
+        //    }
+        //}
+        //PrintArray(array);
 
         #endregion
 
         #region Задача 3
+        //Задача 51: Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали(с индексами (0,0); (1; 1) и т.д.
 
+        //int[,] array = GetArray(3, 3);
+        //FillArray(array, true, 1, 10);
+        //PrintArray(array);
+        //int sum = 0;
 
+        //for (int i = 0; i < array.GetLength(0); i++)
+        //{
+        //    for (int j = 0; j < array.GetLength(1); j++)
+        //    {
+        //        if (i == j)
+        //        {
+        //            sum += array[i, j];
+        //        }
+        //    }
+        //}
 
-
+        //Console.WriteLine($"Сумма элементов по диагонали: {sum}");
         #endregion
 
         #region Задача 4
@@ -141,7 +170,7 @@
         {
             for (int j = 0; j < array.GetLength(1); j++)
             {
-                Console.Write($"{array[i, j]} ");
+                Console.Write($"{array[i, j]}\t");
             }
             Console.WriteLine();
         }
