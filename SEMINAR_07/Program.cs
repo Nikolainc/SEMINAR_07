@@ -73,8 +73,9 @@
         //1 7 - 2 - 85
         //1 - 3 8 - 9
         //8 7 - 7 9
+
         //int[,] array = GetArray(5, 5);
-        //FillArray(array, true); // по умолчанию минимальное значение 0, максимальное 10
+        //FillArray(array, true, -5, 5); // по умолчанию минимальное значение 0, максимальное 10
         //PrintArray(array);
 
         #endregion
@@ -89,11 +90,12 @@
         //i = 4, j = 2->такого числа в массиве нет
         //i = 1, j = 3-> 2
 
-        //int[,] array = GetArray(5, 5);
-        //FillArray(array, true, 1, 10);
-        //Console.Write("Массив создан, введите число от 1 до 9: ");
-        //FindElementInArray(array, int.Parse(Console.ReadLine()));
-        //PrintArray(array);
+        int[,] array = GetArray(5, 5);
+        FillArray(array, true, 1, 10);
+        Console.Write("Массив создан, введите число от 1 до 9: ");
+        FindElementInArray(array, int.Parse(Console.ReadLine()));
+        FindElementInArray(array, int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+        PrintArray(array);
 
 
         #endregion
@@ -166,6 +168,17 @@
                 Console.Write($"{array[i, j]}\t");
             }
             Console.WriteLine();
+        }
+    }
+    static void FindElementInArray(int[,] array, int lines, int colum)
+    {
+        if (lines >= array.GetLength(0) || colum >= array.GetLength(1))
+        {
+            Console.WriteLine("Элемента нет");
+        }
+        else
+        {
+            Console.WriteLine(array[lines, colum]);
         }
     }
     static void FindElementInArray(int[,] array, int value)
