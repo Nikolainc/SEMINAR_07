@@ -92,8 +92,8 @@
 
         int[,] array = GetArray(5, 5);
         FillArray(array, true, 1, 10);
-        Console.Write("Массив создан, введите число от 1 до 9: ");
-        FindElementInArray(array, int.Parse(Console.ReadLine()));
+        //Console.Write("Массив создан, введите число от 1 до 9: ");
+        //FindElementInArray(array, int.Parse(Console.ReadLine()));
         FindElementInArray(array, int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
         PrintArray(array);
 
