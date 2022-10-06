@@ -17,6 +17,7 @@
         FillArray(array);
         PrintArray(array);
 
+
         #endregion
 
         #region Задача 2
