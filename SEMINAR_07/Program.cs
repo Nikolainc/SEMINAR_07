@@ -12,10 +12,10 @@
         //1 2 3 4
         //2 3 4 5
 
-        Console.WriteLine("Введите размер массива: ");
-        int[,] array = GetArray(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
-        FillArray(array);
-        PrintArray(array);
+        //Console.WriteLine("Введите размер массива: ");
+        //int[,] array = GetArray(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+        //FillArray(array);
+        //PrintArray(array);
 
 
         #endregion
@@ -134,7 +134,7 @@
                 array[m, n] = m + n;
             }
         }
-    }
+    } // для первой задачи семинара
     static void PrintArray(int[,] array)
     {
         for (int i = 0; i < array.GetLength(0); i++)
