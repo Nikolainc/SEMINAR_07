@@ -63,13 +63,6 @@
         //Console.WriteLine($"Сумма элементов по диагонали: {sum}");
         #endregion
 
-        #region Задача 4
-
-
-
-
-        #endregion
-
         #endregion
 
         #region HOMEWORK
